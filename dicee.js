@@ -1,6 +1,4 @@
-document.querySelector("button").addEventListener("click", diceRoll);
-
-function diceRoll() {
+document.querySelector("button").addEventListener("click", function () {
 
 var randomNumber1 = Math.floor (Math.random() * 6) + 1; //1-6
 var randomImageSource = "images/dice" + randomNumber1 + ".png";
@@ -19,10 +17,9 @@ if (randomNumber1 > randomNumber2) {
 } else {
   document.querySelector("h1").innerHTML = "It's a draw!";
 }
-}
+});
 
-document.querySelectorAll("button")[1].addEventListener("click", reloadPage);
 
-function reloadPage(){
+document.querySelectorAll("button")[1].addEventListener("click", function (){
   location.reload();
-}
+});
