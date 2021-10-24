@@ -1,4 +1,3 @@
-
 document.querySelector("button").addEventListener("click", diceRoll);
 
 function diceRoll() {
@@ -20,4 +19,10 @@ if (randomNumber1 > randomNumber2) {
 } else {
   document.querySelector("h1").innerHTML = "It's a draw!";
 }
+}
+
+document.querySelectorAll("button")[1].addEventListener("click", reloadPage);
+
+function reloadPage(){
+  location.reload();
 }
