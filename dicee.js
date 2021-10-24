@@ -1,3 +1,8 @@
+
+document.querySelector("button").addEventListener("click", diceRoll);
+
+function diceRoll() {
+
 var randomNumber1 = Math.floor (Math.random() * 6) + 1; //1-6
 var randomImageSource = "images/dice" + randomNumber1 + ".png";
 
@@ -14,4 +19,5 @@ if (randomNumber1 > randomNumber2) {
   document.querySelector("h1").innerHTML = "P2 won!";
 } else {
   document.querySelector("h1").innerHTML = "It's a draw!";
+}
 }
